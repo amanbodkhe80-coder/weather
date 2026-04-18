@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "bfdcfc9a-4161-46ab-857e-00129cd5b81a",
+		"name": "Weather Analytics Platform",
+		"description": "API requests for testing the Platform",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Java API Gateway",
+			"item": [
+				{
+					"name": "Get Current Weather",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/weather/current?city=London",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"weather",
+								"current"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "London"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Weather History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/weather/history?city=London",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"weather",
+								"history"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "London"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Python Data Ingester",
+			"item": [
+				{
+					"name": "Get Latest Weather (Raw DB)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/weather/latest?city=London",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"weather",
+								"latest"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "London"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get History (Raw DB)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/weather/history?city=London",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"weather",
+								"history"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "London"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

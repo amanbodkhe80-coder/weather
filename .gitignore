@@ -1,0 +1,9 @@
+.env
+node_modules/
+dist/
+api-gateway/target/
+data-ingester/__pycache__/
+*.class
+.idea/
+.vscode/
+*.log

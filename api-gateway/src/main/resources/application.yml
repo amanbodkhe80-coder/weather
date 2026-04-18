@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
+app:
+  python-service:
+    url: ${PYTHON_SERVICE_URL:http://localhost:8000}
+  
+logging:
+  level:
+    com.weather: DEBUG
